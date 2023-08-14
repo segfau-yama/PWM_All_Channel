@@ -39,34 +39,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-PWM_Output.hex \
+PWM_All_Channel.hex \
 
 SECONDARY_LIST += \
-PWM_Output.lst \
+PWM_All_Channel.lst \
 
 SECONDARY_SIZE += \
-PWM_Output.siz \
+PWM_All_Channel.siz \
 
 
 # All Target
-all: PWM_Output.elf secondary-outputs
+all: PWM_All_Channel.elf secondary-outputs
 
 # Tool invocations
-PWM_Output.elf: $(OBJS) $(USER_OBJS)
-	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"PWM_Output.map" --specs=nano.specs --specs=nosys.specs -o "PWM_Output.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+PWM_All_Channel.elf: $(OBJS) $(USER_OBJS)
+	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -T "D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"PWM_All_Channel.map" --specs=nano.specs --specs=nosys.specs -o "PWM_All_Channel.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@	@
-PWM_Output.hex: PWM_Output.elf
-	@	riscv-none-embed-objcopy -O ihex "PWM_Output.elf"  "PWM_Output.hex"
+PWM_All_Channel.hex: PWM_All_Channel.elf
+	@	riscv-none-embed-objcopy -O ihex "PWM_All_Channel.elf"  "PWM_All_Channel.hex"
 	@	@
-PWM_Output.lst: PWM_Output.elf
-	@	riscv-none-embed-objdump --all-headers --demangle --disassemble -M xw "PWM_Output.elf" > "PWM_Output.lst"
+PWM_All_Channel.lst: PWM_All_Channel.elf
+	@	riscv-none-embed-objdump --all-headers --demangle --disassemble -M xw "PWM_All_Channel.elf" > "PWM_All_Channel.lst"
 	@	@
-PWM_Output.siz: PWM_Output.elf
-	@	riscv-none-embed-size --format=berkeley "PWM_Output.elf"
+PWM_All_Channel.siz: PWM_All_Channel.elf
+	@	riscv-none-embed-size --format=berkeley "PWM_All_Channel.elf"
 	@	@
 # Other Targets
 clean:
-	-$(RM) $(ASM_UPPER_DEPS)$(OBJS)$(SECONDARY_FLASH)$(SECONDARY_LIST)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS) PWM_Output.elf
+	-$(RM) $(ASM_UPPER_DEPS)$(OBJS)$(SECONDARY_FLASH)$(SECONDARY_LIST)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS) PWM_All_Channel.elf
 	-@
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_LIST) $(SECONDARY_SIZE)
 

@@ -2,8 +2,8 @@ User/ch32v20x_it.o: ../User/ch32v20x_it.c ../User/ch32v20x_it.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Debug/debug.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Core/core_riscv.h \
- D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/system_ch32v20x.h \
- D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/ch32v20x_conf.h \
+ D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/system_ch32v20x.h \
+ D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/ch32v20x_conf.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_adc.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_bkp.h \
@@ -23,7 +23,7 @@ User/ch32v20x_it.o: ../User/ch32v20x_it.c ../User/ch32v20x_it.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_tim.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_usart.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_wwdg.h \
- D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/ch32v20x_it.h \
+ D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/ch32v20x_it.h \
  D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_misc.h
 
 ../User/ch32v20x_it.h:
@@ -34,9 +34,9 @@ D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x.h:
 
 D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Core/core_riscv.h:
 
-D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/system_ch32v20x.h:
+D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/system_ch32v20x.h:
 
-D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/ch32v20x_conf.h:
+D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/ch32v20x_conf.h:
 
 D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_adc.h:
 
@@ -76,6 +76,6 @@ D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_usart.h:
 
 D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_wwdg.h:
 
-D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User/ch32v20x_it.h:
+D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User/ch32v20x_it.h:
 
 D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc/ch32v20x_misc.h:

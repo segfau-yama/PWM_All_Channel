@@ -16,6 +16,6 @@ C_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Debug/debug.o: D:/suiki/ダウンロード/CH32V20xEVT/EVT/EXAM/SRC/Debug/debug.c
-	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Debug" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Core" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_Output\User" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc" -std=gnu99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	@	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized  -g -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Debug" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Core" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\TIM\PWM_All_Channel\User" -I"D:\suiki\ダウンロード\CH32V20xEVT\EVT\EXAM\SRC\Peripheral\inc" -std=gnu99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@	@
 
